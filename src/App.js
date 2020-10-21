@@ -67,7 +67,7 @@ function App() {
       },
       headers: {
         "x-rapidapi-host": "community-open-weather-map.p.rapidapi.com",
-        "x-rapidapi-key": "9bdd57c107msh99d6c784a966987p1b4a0cjsn7b67358ce112",
+        "x-rapidapi-key": "replace with api key",
       },
     };
 
