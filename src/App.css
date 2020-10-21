@@ -1,38 +1,141 @@
 .App {
   text-align: center;
+  display:flex;
+  flex-direction: column; 
+  gap:100px;
+  align-items: center;
+  margin-top: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main_container {
+  display: flex;
+  height:600px;
+  width:800px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.weather_container {
+  display: flex;
+  flex-direction: column;
+  gap:30px;
+  width:50%;
+  background-image: url('https://media4.giphy.com/media/l0Iy5fjHyedk9aDGU/source.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.image_container {
+  width: 50%;
+}
+
+.image_container img {
+  width:100%;
+  height:100%;
+  opacity: 0.5;
+}
+
+.search_section {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.search_type {
+  display: flex;
+  width: 100%;
+  height:40px;
+  margin:15px;
+  gap:10px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.search_type input {
+  width:60%;
+}
+.weather_result {
+  display: flex;
+  flex-direction: column;
+  gap:20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.weather {
+  font-size: 1.5em;
+}
+
+.propositions {
+  width:90%;
+  background-color: #fff;
+  color:black;
+  margin-top: -2%;
+  align-self: center;
+}
+
+ul  {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+li {
+  text-decoration: none;
+  text-align: center;
+  cursor:pointer;
+  width: 100%;
+  justify-self: center;
+  margin-left: -40px;
+}
+
+li:hover {
+  color:#fff;
+  background-color: rgb(90, 89, 89);
+}
+
+.wind {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.dates {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 1.2em;
+}
+
+.riseSet {
+  width: 40px;
+  height: 40px;
+  margin-top:-35px;
+  margin:10px;
+}
+
+#weatherImg {
+  width:60px;
+  height:60px;
+}
+
+
+@media screen and (max-width: 960px) {
+
+  .App {
+    gap:20px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .main_container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image_container  {
+    height: 40%;
+  }
+
+  .weather-container {
+    height: 60%;
   }
 }
